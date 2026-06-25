@@ -28,7 +28,7 @@ jobs:
     - name: Run mlflow project
       working-directory: ./MLProject
       run: |
-        mlflow run . -P n_estimators=100
+        mlflow run . -P n_estimators=100 --env-manager=local
 
     - name: Build Docker Model
       working-directory: ./MLProject
